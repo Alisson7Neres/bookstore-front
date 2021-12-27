@@ -1,0 +1,26 @@
+mat-toolbar {
+    background-color: black;
+    white-space: normal;
+}
+
+img {
+    margin: 5px;
+    height: 5rem;
+}
+
+.header {
+    justify-content: center;
+    height: 10%;
+}
+
+h1 {
+    color: white;
+    padding-left: 1.5rem;
+    font-size: 2rem;
+}
+
+span {
+    display: flex;
+    align-items: center;
+}
+
