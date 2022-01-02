@@ -29,8 +29,10 @@ export class CategoriaCreateComponent implements OnInit {
           this.Service.mensagem(err.error.errors[i].message)
         }
     })
+  }
 
-    
+  cancel(): void {
+    this.router.navigate(['categorias'])
   }
 
 }
