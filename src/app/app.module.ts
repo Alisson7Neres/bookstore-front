@@ -27,6 +27,7 @@ import { CategoriaDeleteComponent } from './components/views/categoria/categoria
 import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
 
 import { FormsModule } from '@angular/forms';
+import { LivroReadComponent } from './components/views/livro/livro-read/livro-read.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { FormsModule } from '@angular/forms';
     CategoriaCreateComponent,
     CategoriaDeleteComponent,
     CategoriaUpdateComponent,
+    LivroReadComponent,
   ],
   imports: [
     BrowserModule,
