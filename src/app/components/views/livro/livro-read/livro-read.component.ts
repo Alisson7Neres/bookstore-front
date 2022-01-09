@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { LivroService } from '../livro.service';
 
 import { Livros } from './livro.model';
@@ -18,7 +18,7 @@ export class LivroReadComponent implements OnInit {
 
   id_cat: String = '';
 
-  constructor(private service: LivroService, private http: HttpClient, private route: ActivatedRoute) { }
+  constructor(private service: LivroService, private http: HttpClient, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.id_cat = this.route.snapshot.paramMap.get('id_cat')!
@@ -31,8 +31,8 @@ export class LivroReadComponent implements OnInit {
     })
   }
 
-  navegarParaLivroCreate() {
-
+  navegarParaLivroCreate(): void {
+    this.router.navigate([`categorias/${this.id_cat}/livros/create`])
   }
 
 }
