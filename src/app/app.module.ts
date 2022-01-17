@@ -32,6 +32,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LivroReadComponent } from './components/views/livro/livro-read/livro-read.component';
 import { LivroCreateComponent } from './components/views/livro/livro-create/livro-create.component';
 import { LivroUpdateComponent } from './components/views/livro/livro-update/livro-update.component';
+import { LivroDeleteComponent } from './components/views/livro/livro-delete/livro-delete.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { LivroUpdateComponent } from './components/views/livro/livro-update/livr
     LivroReadComponent,
     LivroCreateComponent,
     LivroUpdateComponent,
+    LivroDeleteComponent,
   ],
   imports: [
     BrowserModule,
